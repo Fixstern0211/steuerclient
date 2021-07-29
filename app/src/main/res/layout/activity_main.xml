@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/background"
+    android:id="@+id/ll_function"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sms_order"
+        android:textColor="@color/deep_yellow"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_marginLeft="30dp"
+            android:maxLines="1"
+            android:hint="@string/to_phone_number"
+            android:inputType="phone"
+            android:text="01"
+            android:textColor="@color/cream"/>
+
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="set"
+            android:layout_toRightOf="@+id/et_phone"
+            android:background="@drawable/button_btn"/>
+
+        <ImageView
+            android:id="@+id/icon_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_photo"
+            android:layout_below="@+id/et_phone"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="photo"
+            android:textColor="@color/deep_yellow"
+            android:textFontWeight="1"
+            android:onClick="photo"
+            android:layout_below="@id/et_phone"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_btn"
+            android:layout_toEndOf="@+id/icon_camera"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/icon_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_video"
+            android:layout_below="@+id/btn_camera"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="video"
+            android:onClick="video"
+            android:textColor="@color/deep_yellow"
+            android:layout_below="@id/btn_camera"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_btn"
+            android:layout_toEndOf="@+id/icon_video"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/icon_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_audio"
+            android:layout_below="@+id/btn_video"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btn_audio"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="audio"
+            android:onClick="audio"
+            android:textColor="@color/deep_yellow"
+            android:layout_below="@id/btn_video"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_btn"
+            android:layout_toEndOf="@+id/icon_audio"
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail_order"
+        android:textColor="@color/deep_yellow"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp">
+
+        <ImageView
+            android:id="@+id/icon_camera2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_photo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_ecamera"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="photo"
+            android:textColor="@color/deep_yellow"
+            android:textFontWeight="1"
+            android:onClick="ePhoto"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_btn"
+            android:layout_toEndOf="@+id/icon_camera2"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/icon_video2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_video"
+            android:layout_below="@+id/btn_ecamera"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btn_evideo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="video"
+            android:textColor="@color/deep_yellow"
+            android:layout_below="@id/btn_ecamera"
+            android:onClick="eVideo"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_btn"
+            android:layout_toEndOf="@+id/icon_video2"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/icon_audio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_audio"
+            android:layout_below="@+id/btn_evideo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btn_eaudio"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="audio"
+            android:textColor="@color/deep_yellow"
+            android:layout_below="@id/btn_evideo"
+            android:onClick="eAudio"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_btn"
+            android:layout_toEndOf="@+id/icon_audio2"
+            android:layout_marginStart="10dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="@string/send_file"
+        android:onClick="send"
+        android:textColor="@color/deep_yellow"
+        android:layout_below="@id/btn_audio"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_btn"/>
+
+</LinearLayout>

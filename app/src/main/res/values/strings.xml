@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SteuerClient</string>
+    <string name="action_settings">Settings</string>
+    <string name="compose_sms">Compose SMS</string>
+    <string name="rejoy">Rejoy</string>
+    <string name="e_mail_address">E-mail Address</string>
+    <string name="xxx_gmail">xxx@gmail</string>
+    <string name="phone_number">phone number</string>
+    <string name="app_password">app_password</string>
+    <string name="sms_order">SMS_Order</string>
+    <string name="mail_order">mail_order</string>
+    <string name="Mail_order">Mail_order</string>
+    <string name="email_order">email_order</string>
+    <string name="z354746852_gmail_com">z354746852@gmail.com</string>
+    <string name="mirdwqppsssbbtcx">mirdwqppsssbbtcx</string>
+    <string name="e_mail_order">E-mail-Order</string>
+    <string name="send_file">send file</string>
+    <string name="to_phone_number">to/phone number</string>
+    <string name="apppassword">AppPassword</string>
+    <string name="as_remotegeraete">as Remotegeraete</string>
+    <string name="als_remotegeraete">als_remotegeraete</string>
+
+</resources>
